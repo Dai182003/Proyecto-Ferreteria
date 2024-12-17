@@ -1,0 +1,91 @@
+/* Estilo general para la página */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('./assets/images/fondo.png');
+    background-color: #f0f0f0; /* Color de fondo general */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    color: white;
+}
+
+/* Botón de regreso */
+.back-button {
+    background-color: #ff7f50; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: -250px; /* Ajuste hacia la izquierda */
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #b72c86; /* Cambio de color al pasar el cursor */
+}
+
+/* Imagen superior */
+.header-image img {
+    width: 100px;  /* Tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Título principal */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.register-form .register-button,
+.register-form .login-button {
+    display: block;
+    background-color: #ff7f50; /* Color del botón */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.register-form .register-button:hover,
+.register-form .login-button:hover {
+    background-color: #3c84d1; /* Cambio de color al pasar el cursor */
+}
+
+/* Mensaje de éxito */
+.success-message {
+    display: none; /* Oculto por defecto */
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+}

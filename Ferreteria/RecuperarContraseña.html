@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="RecuperarContraseña.css"> <!-- Asegúrate de tener un CSS para estilos -->
+    <script>
+        function sendRecoveryEmail(event) {
+            event.preventDefault(); // Evita el envío del formulario por defecto
+            const email = document.getElementById('email').value;
+
+            if (email) {
+                alert(`Se ha enviado un correo electrónico a ${email} para recuperar tu contraseña.`);
+                // Aquí podrías agregar la lógica para enviar el correo electrónico
+                // Por ejemplo, hacer una llamada a una API si estás usando un backend.
+            } else {
+                alert("Por favor, ingresa tu dirección de correo electrónico.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Botón de regreso -->
+        <button class="back-button" onclick="location.href='login.html'">⏪ Regresar</button>
+
+        <!-- Título -->
+        <h1 class="title">Recuperar Contraseña</h1>
+
+        <!-- Formulario para recuperar contraseña -->
+        <form class="recovery-form" onsubmit="sendRecoveryEmail(event)">
+            <input type="email" id="email" placeholder="Ingresa tu correo electrónico" required>
+            <button type="submit" class="recovery-button">Enviar Correo de Recuperación</button>
+        </form>
+
+        <!-- Mensaje adicional -->
+        <p class="message">Te enviaremos un enlace para restablecer tu contraseña.</p>
+    </div>
+</body>
+</html>

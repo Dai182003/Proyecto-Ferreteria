@@ -1,0 +1,98 @@
+/* Cuadro general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif; /* Fuente legible */
+    background-image: url('./assets/images/fondo.png'); /* Cambia el fondo al nombre de tu archivo */
+    background-size: cover; 
+    color: rgb(255, 255, 255);
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;  /* Centra el contenido del contenedor */
+    background-color: rgba(0, 0, 0, 0.8);  /* Fondo más oscuro para un mejor contraste */
+    padding: 20px;  /* Espaciado interno moderado */
+    border-radius: 10px;  /* Esquinas redondeadas */
+    width: 80%;  /* Ancho adaptable */
+    max-width: 400px;  /* Ancho máximo ajustado */
+    margin: 50px auto;  /* Centra el contenedor y le da margen superior e inferior */
+}
+
+/* Imagen dentro del contenedor */
+.image-container img {
+    width: 15%;  /* Cambia el tamaño del logo a un 15% del ancho del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    border-radius: 25px;
+    display: block;  /* Elimina espacios adicionales debajo de la imagen */
+    margin: 30px auto 20px;  /* Agrega un margen superior de 30px y centra la imagen horizontalmente */
+}
+
+/* Estilo para los encabezados */
+h1.title {
+    color: #fff;  /* Color blanco para el título */
+    font-size: 24px;  /* Tamaño de fuente más pequeño para el título */
+    font-weight: bold;  
+}
+
+/* Estilo de los botones */
+.login-button,
+.register-button {
+    display: block;
+    width: 70%; /* Ancho del botón ajustado */
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #3498db; /* Color azul para iniciar sesión */
+}
+
+.register-button {
+    background-color: #e74c3c; /* Color rojo para registrarse */
+}
+
+/* Efecto hover en los botones */
+.login-button:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el mouse en Iniciar Sesión*/
+}
+
+.register-button:hover {
+    background-color: #c0392b; /* Color más oscuro al pasar el mouse en Registrarse*/
+}
+
+/* Estilos generales para el contenedor de términos */
+.terms-container {
+    text-align: center; /* Centra el texto en el contenedor */
+    padding: 15px; /* Espaciado interno */
+    max-width: 500px; /* Ancho máximo */
+    width: 100%; /* Permite que el contenedor sea flexible */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para contraste */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+
+/* Estilo para el checkbox y label en términos y condiciones */
+.terms-container input[type="checkbox"] {
+    margin-right: 10px; /* Espaciado a la derecha del checkbox */
+}
+
+.terms-container label {
+    font-size: 0.9em; /* Tamaño de fuente normal */
+    color: #fff; /* Color blanco para buena legibilidad sobre fondo oscuro */
+}
+
+/* Estilo para el enlace dentro del label */
+.terms-container a {
+    color: #3498db; /* Color azul para el enlace (coincide con los botones) */
+}

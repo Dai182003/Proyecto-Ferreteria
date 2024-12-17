@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERRETERIA BEN10</title>
+    <link rel="stylesheet" href="Registro.css">
+    <script>
+        function checkTerms(event) {
+            const termsCheckbox = document.getElementById('acceptTerms');
+            if (!termsCheckbox.checked) {
+                event.preventDefault(); // Evita la navegación
+                alert("Debes aceptar los términos y condiciones para continuar.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="image-container">
+        <img src="./assets/images/LogoBen10.png" alt="Logo Ben10">
+    </div>
+    <div class="container">
+        <h1 class="title">FERRETERIA BEN 10</h1>
+        
+        <!-- Botón de Iniciar Sesión con verificación -->
+        <a href="login.html" class="login-button" onclick="checkTerms(event)">Iniciar Sesión</a>
+        
+        <!-- Botón de Registrarse con verificación -->
+        <a href="CrearCuenta.html" class="register-button" onclick="checkTerms(event)">Registrarse</a>
+    </div>
+    
+    <div class="terms-container">
+        <input type="checkbox" id="acceptTerms" required>
+        <label for="acceptTerms">He leído y acepto los <a href="Terminos y Condiciones.html" target="_blank">términos y condiciones</a>.</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 724px;
+  margin: 0 auto;
+  background: #8bc5ad;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+.interaction-buttons {
+  position: relative;
+  width: 1476px;
+  height: 130px;
+  margin: 0 0 0 -17px;
+  background: #2b2d2b;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.hardware-store-logo {
+  position: absolute;
+  width: 121px;
+  height: 113px;
+  top: 8px;
+  left: 101px;
+  background: url(./assets/images/d5317c63aa81df770fa0f1488a20bc56c2a876e8.png)
+    no-repeat center;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: 9;
+}
+.login-logo {
+  position: absolute;
+  width: 56px;
+  height: 61px;
+  top: 16px;
+  left: 1205px;
+  background: url(./assets/images/887a4ebd-27ba-4d87-9b4c-47047c3f3389.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 26;
+}
+.frame {
+  position: absolute;
+  width: 79px;
+  height: 52px;
+  top: 38px;
+  left: 250px;
+  background: #ffffff;
+  z-index: 4;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.frame-1 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin: 2px 0 0 59px;
+  background: #ffa500;
+  opacity: 0.5;
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.number {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20px;
+  top: 0;
+  left: 4px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.153px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.image {
+  position: absolute;
+  width: 57px;
+  height: 46px;
+  top: 40px;
+  left: 264px;
+  z-index: 7;
+}
+.image-2 {
+  position: absolute;
+  width: 48.208px;
+  height: 46px;
+  top: 43px;
+  left: 268px;
+  background: url(./assets/images/2a665d40bc777729f247a3cb9af30638405af12e.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 8;
+}
+.preguntas-frecuentes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 46px;
+  left: 757px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 2;
+}
+.acerca-de {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 55px;
+  left: 577px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 1;
+}
+.contacto {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 55px;
+  left: 961px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 3;
+}
+.comprar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 55px;
+  left: 397px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 25;
+}
+.usuario {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 121px;
+  height: 40px;
+  top: 85px;
+  left: 1194px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 27;
+}
+.bienvenida {
+  position: relative;
+  width: 1440px;
+  height: 661px;
+  margin: 1px 0 0 1px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.inicio-carrito {
+  position: relative;
+  width: 175px;
+  height: 30px;
+  margin: 118px 0 0 26px;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  opacity: 0.75;
+  z-index: 21;
+}
+.inicio-carrito-3 {
+  position: relative;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 30.256px;
+  text-align: left;
+}
+.carrito {
+  position: relative;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30.256px;
+  text-align: left;
+}
+.frame-4 {
+  position: relative;
+  width: 1435px;
+  height: 67px;
+  margin: 447px 0 0 -7px;
+  background: #8bc5ad;
+  z-index: 12;
+  overflow: hidden;
+}
+.text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 965px;
+  height: 72px;
+  margin: 97px 0 0 374px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30.256px;
+  text-align: left;
+  z-index: 11;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.95);
+}
+.frame-5 {
+  position: absolute;
+  width: 1013px;
+  height: 325px;
+  top: 171px;
+  left: 25px;
+  border: 3px solid #8bc5ad;
+  opacity: 0.8;
+  z-index: 13;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.flex-row-af {
+  position: relative;
+  width: 538px;
+  height: 185px;
+  margin: 32px 0 0 439px;
+  z-index: 20;
+}
+.image-6 {
+  position: absolute;
+  width: 24px;
+  height: 31px;
+  top: 0;
+  left: 514px;
+  background: url(./assets/images/4adfc5fb9c2269e6d486e648ab4b823c55d62b59.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 20;
+}
+.kit-dewalt-combinado {
+  position: absolute;
+  width: 490px;
+  height: 176px;
+  top: 9px;
+  left: 0;
+  font-family: Inter, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.568px;
+  background: url(./assets/images/36df5221-c5b7-4201-8c5b-dc2032cde28c.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 14;
+}
+.flex-row-c {
+  position: relative;
+  width: 172px;
+  height: 32px;
+  margin: 47px 0 0 727px;
+  z-index: 19;
+}
+.cant {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 16;
+}
+.plus {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 0;
+  left: 155px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 18;
+}
+.minus {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 1px;
+  left: 79px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 19;
+}
+.frame-7 {
+  position: absolute;
+  width: 28px;
+  height: 30px;
+  top: 1px;
+  left: 111px;
+  border: 2px solid #000000;
+  opacity: 0.5;
+  z-index: 17;
+  overflow: hidden;
+}
+.span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 31px;
+  top: 1px;
+  left: 119px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.045px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 15;
+}
+.div {
+  position: absolute;
+  width: 343px;
+  height: 286px;
+  top: 194px;
+  left: 69px;
+  background: url(./assets/images/1f4bc6b85071dcc1a4035e8751c87209b0a09e73.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 22;
+  border-radius: 10px;
+}
+.button {
+  position: absolute;
+  width: 252px;
+  height: 85px;
+  top: 388px;
+  left: 1102px;
+  cursor: pointer;
+  background: transparent;
+  background: #9FAC0B;
+  background-size: cover;
+  border: none;
+  z-index: 23;
+}
+.us-dollar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 29px;
+  top: 410px;
+  left: 479px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 28;
+}
+.buy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 44px;
+  top: 411px;
+  left: 1154px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.568px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 24;
+}

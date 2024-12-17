@@ -1,0 +1,586 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 1796px;
+  margin: 0 auto;
+  background: #8bc5ad;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+.interaction-buttons {
+  position: relative;
+  width: 1476px;
+  height: 130px;
+  margin: 0 0 0 -17px;
+  background: #2b2d2b;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.ferretera-logo {
+  position: absolute;
+  width: 121px;
+  height: 113px;
+  top: 8px;
+  left: 101px;
+  background: url(./assets/images/d5317c63aa81df770fa0f1488a20bc56c2a876e8.png)
+    no-repeat center;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: 8;
+}
+.login-logo {
+  position: absolute;
+  width: 56px;
+  height: 61px;
+  top: 16px;
+  left: 1205px;
+  background: url(./assets/images/ba515fd3-0b14-46de-b619-4c784904d919.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 34;
+}
+.frame {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 39px;
+  left: 308px;
+  cursor: pointer;
+  background: #ffa500;
+  border: none;
+  opacity: 0.5;
+  z-index: 6;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.number-1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20px;
+  top: 0;
+  left: 4px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.153px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.image {
+  position: absolute;
+  width: 57px;
+  height: 46px;
+  top: 40px;
+  left: 264px;
+  background: url(./assets/images/579a0b65c4112977a5ca8730fa1ee9dba30637b5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+.faq {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 46px;
+  left: 757px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 2;
+}
+.frame-1 {
+  position: absolute;
+  width: 134px;
+  height: 43px;
+  top: 46px;
+  left: 382px;
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  z-index: 4;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.acerca-de {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 55px;
+  left: 577px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 1;
+}
+.contacto {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 55px;
+  left: 961px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 3;
+}
+.comprar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 133px;
+  height: 61px;
+  top: 55px;
+  left: 397px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 29;
+}
+.usuario {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 121px;
+  height: 40px;
+  top: 85px;
+  left: 1194px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.205px;
+  text-align: left;
+  z-index: 35;
+}
+.bienvenida {
+  position: relative;
+  width: 1440px;
+  height: 1666px;
+  margin: 1px 0 0 1px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  z-index: 9;
+  overflow: hidden;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.flex-row-f {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 496px;
+  height: 45px;
+  margin: 45px 0 0 512px;
+  z-index: 30;
+}
+.frame-2 {
+  flex-shrink: 0;
+  position: relative;
+  width: 446px;
+  height: 45px;
+  font-size: 0px;
+  background: #ffffff;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  z-index: 30;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.buscar {
+  display: block;
+  position: relative;
+  height: 24px;
+  margin: 6px 0 0 15px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  opacity: 0.5;
+  z-index: 31;
+}
+.frame-input {
+  position: absolute;
+  width: 446px;
+  height: 45px;
+  top: -3px;
+  left: -3px;
+  background: transparent;
+  border: none;
+  z-index: 32;
+  outline: none;
+}
+.image-3 {
+  flex-shrink: 0;
+  position: relative;
+  width: 29px;
+  height: 38px;
+  background: url(./assets/images/0b608564510ddff7e57f0d95cac40fd0eaa10b32.png)
+    no-repeat center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 12;
+}
+.flex-row-c {
+  position: relative;
+  width: 1191px;
+  height: 286px;
+  margin: 213px 0 0 127px;
+  z-index: 33;
+}
+.empty {
+  position: absolute;
+  width: 343px;
+  height: 286px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/1f4bc6b85071dcc1a4035e8751c87209b0a09e73.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 13;
+  border-radius: 10px;
+}
+.frame-4 {
+  position: absolute;
+  width: 641px;
+  height: 271px;
+  top: 4px;
+  left: 503px;
+  border: 3px solid #8bc5ad;
+  opacity: 0.8;
+  z-index: 28;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.oportunidad-kit-dewalt-combinado {
+  position: absolute;
+  width: 663px;
+  height: 241px;
+  top: 23px;
+  left: 528px;
+  font-family: Inter, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.568px;
+  text-align: left;
+  z-index: 33;
+}
+.oportunidad-kit-dewalt-combinado-5 {
+  position: relative;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.568px;
+  text-align: left;
+}
+.price {
+  position: relative;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+}
+.flex-row-cc {
+  position: relative;
+  width: 735px;
+  height: 67px;
+  margin: 20px 0 0 127px;
+  z-index: 20;
+}
+.image-6 {
+  position: absolute;
+  width: 220px;
+  height: 67px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/4bdbd189204e145f8edc0183364792fb0c4a5b2d.png)
+    no-repeat center;
+  background-size: cover;
+  opacity: 0.65;
+  z-index: 11;
+}
+.cant {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 17px;
+  left: 562px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 16;
+}
+.dash {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 17px;
+  left: 653px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 18;
+}
+.num1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 31px;
+  top: 17px;
+  left: 682px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.045px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 20;
+}
+.frame-7 {
+  position: absolute;
+  width: 28px;
+  height: 30px;
+  top: 18px;
+  left: 674px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #000000;
+  opacity: 0.5;
+  z-index: 19;
+  overflow: hidden;
+}
+.plus {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 18px;
+  left: 718px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 17;
+}
+.flex-row-eca {
+  position: relative;
+  width: 965px;
+  height: 140px;
+  margin: 16px 0 0 374px;
+  z-index: 22;
+}
+.rectangle-btn {
+  position: absolute;
+  width: 298.5px;
+  height: 104px;
+  top: 0;
+  left: 257px;
+  cursor: pointer;
+  background: transparent;
+  background: #0B7014;
+  background-size: cover;
+  border: none;
+  z-index: 14;
+}
+.rectangle-btn-8 {
+  position: absolute;
+  width: 298.5px;
+  height: 104px;
+  top: 0;
+  left: 650px;
+  cursor: pointer;
+  background: transparent;
+  background: #9FAC0B;
+  background-size: cover;
+  border: none;
+  z-index: 15;
+}
+.add-to-cart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 44px;
+  top: 30px;
+  left: 271px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.568px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 21;
+}
+.comprar-9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 44px;
+  top: 30px;
+  left: 725px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.568px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 22;
+}
+.text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 965px;
+  height: 72px;
+  top: 68px;
+  left: 0;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30.256px;
+  text-align: left;
+  z-index: 10;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.95);
+}
+.frame-a {
+  position: relative;
+  width: 1435px;
+  height: 67px;
+  margin: 46px 0 0 0;
+  background: #8bc5ad;
+  z-index: 23;
+  overflow: hidden;
+}
+.frame-b {
+  position: relative;
+  width: 1435px;
+  height: 524px;
+  margin: 1px 0 0 0;
+  background: #8bc5ad;
+  border: 1px solid #8bc5ad;
+  z-index: 24;
+  overflow: hidden;
+}
+.mas-sobre-dewalt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 45px;
+  top: -1px;
+  left: 31px;
+  color: #7c1c1c;
+  font-family: Inria Serif, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 25;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.95);
+}
+.ellipse {
+  position: absolute;
+  width: 829px;
+  height: 524px;
+  top: -1px;
+  left: 595px;
+  background: url(./assets/images/b3e10c98-21e0-44b7-81cb-cc53aaa86fe3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 26;
+}
+.dewalt-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 557px;
+  height: 268px;
+  top: 241px;
+  left: 18px;
+  color: #000000;
+  font-family: Inria Serif, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.776px;
+  text-align: left;
+  z-index: 27;
+}

@@ -1,0 +1,47 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente legible */
+    background-image: url('./assets/images/fondo.png'); /* Cambia el fondo al nombre de tu archivo */
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin: 20px; /* Margen alrededor del contenido */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño y adaptable (90% del tamaño base) */
+}
+
+/* Contenedor principal */
+.container {
+    background: white; /* Fondo blanco para el contenedor */
+    padding: 20px; /* Relleno interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+/* Estilo para los encabezados */
+h1 {
+    font-size: 1.8rem; /* Tamaño de fuente para h1 ajustado (más pequeño que antes) */
+    color: #007bff; /* Color azul para los encabezados */
+}
+
+h2 {
+    font-size: 1.5rem; /* Tamaño de fuente para h2 ajustado */
+}
+
+h3 {
+    font-size: 1.2rem; /* Tamaño de fuente para h3 ajustado */
+}
+
+/* Estilo para listas no ordenadas */
+ul {
+    margin-left: 20px; /* Margen a la izquierda para las listas */
+}
+
+/* Enlaces dentro del documento */
+a {
+    color: #3498db; /* Color azul para los enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón sobre el enlace */
+}

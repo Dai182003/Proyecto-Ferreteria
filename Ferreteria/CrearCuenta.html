@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="CrearCuenta.css"> <!-- Enlaza al archivo CSS externo -->
+    <style>
+        /* Estilo básico del mensaje de éxito */
+        .success-message {
+            display: none;  /* Oculto por defecto */
+            color: rgb(200, 98, 16);   /* Color del mensaje */
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Botón de regreso -->
+        <button class="back-button" onclick="location.href='Registro.html'">⏪ Regresar</button>
+        
+        <!-- Imagen superior -->
+        <div class="header-image">
+            <img src="./assets/images/LogoBen10.png" alt="BEN10">
+        </div>
+
+        <!-- Mensaje de éxito -->
+        <div class="success-message" id="successMessage">
+            Registro Exitoso
+        </div>
+        
+        <!-- Título -->
+        <h1 class="title">Crear cuenta nueva</h1>
+
+        <!-- Formulario -->
+        <form class="register-form" onsubmit="return showSuccessMessage(event)">
+            <input type="text" placeholder="Usuario" required>
+            <input type="email" placeholder="Correo Electrónico o Teléfono" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit" class="register-button">Registrarse</button>
+            <a href="login.html" class="login-button">Iniciar Sesión</a>
+        </form>
+        
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault(); // Evita el envío del formulario y el refresco de la página
+            
+            // Mostrar el contenedor del mensaje de éxito
+            const messageContainer = document.getElementById('successMessage');
+            messageContainer.style.display = 'block';
+
+            // Ocultar el mensaje después de unos segundos
+            setTimeout(() => {
+                messageContainer.style.display = 'none';
+            }, 4000); // 4000 ms = 4 segundos
+        }
+    </script>
+</body>
+</html>

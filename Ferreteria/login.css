@@ -1,0 +1,106 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('./assets/images/fondo.png');
+    background-size: cover;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;  /* Centra el contenido del contenedor */
+    background-color: #f5d7d7;  /* Fondo más para un mejor contraste */
+    padding: 40px 20px;  /* Espaciado interno moderado */
+    border-radius: 20px;  /* Esquinas redondeadas */
+    width: 85%;  /* Ancho adaptable */
+    max-width: 400px;  /* Ancho máximo ajustado */
+    margin: 50px auto;  /* Centra el contenedor y le da margen superior e inferior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Sombra sutil para profundidad */
+    
+}
+/* Botón de regreso */
+.back-button {
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: -260px
+}
+
+/* Imagen superior */
+.header-image img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Título */
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    transition: all 0.1s ease;
+    background: linear-gradient(#121125, #121125)
+    padding-box,
+    linear-gradient(45deg, rgba(90, 6, 245, 0.734), rgb(204, 211, 7)) border-box;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.login-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #2980b9;
+}
+
+.forgot-password {
+    text-decoration: underline; /* Aplica subrayado al texto */
+    color: #3498db; /* Color del texto */
+}
+
+.forgot-password:hover {
+    color: #2980b9; /* Cambia el color al pasar el mouse sobre el enlace */
+}
+
+
